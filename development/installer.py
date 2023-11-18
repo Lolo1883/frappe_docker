@@ -57,7 +57,7 @@ def get_args_parser():
         action="store",
         type=str,
         help="Site name, should end with .localhost, default: development.localhost",  # noqa: E501
-        default="localhost",
+        default="development.localhost",
     )
     parser.add_argument(
         "-r",
@@ -73,7 +73,7 @@ def get_args_parser():
         action="store",
         type=str,
         help="frappe repo to use, default: version-15",  # noqa: E501
-        default="version-14",
+        default="version-15",
     )
     parser.add_argument(
         "-p",
@@ -103,7 +103,7 @@ def get_args_parser():
         action="store",
         type=str,
         help="admin password for site, default: admin",  # noqa: E501
-        default="1234",
+        default="admin",
     )
     parser.add_argument(
         "-d",
